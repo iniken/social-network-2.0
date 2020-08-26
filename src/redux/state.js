@@ -1,3 +1,5 @@
+
+
 let store = {
     _state: {
         profilePage: {
@@ -29,11 +31,11 @@ let store = {
             ]
         }
     },
+    _callSubscriber() {
+        console.log("State changed");
+    },
     getState() {
         return this._state;
-    },
-    callSubscriber() {
-        console.log("State changed");
     },
     addPost() {
         let  newPost = {
@@ -56,3 +58,10 @@ let store = {
 
 export default store;
 window.store = store;
+
+
+
+
+
+
+
