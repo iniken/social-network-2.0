@@ -9,7 +9,7 @@ const Profile = (props) => {
            <ProfileInfo />
            <MyPosts posts={props.profilePage.posts}
                     newPostText={props.profilePage.newPostText}
-                    dispatch={props.disPatch}
+                    dispatch={props.dispatch}
                      />
         </div>
     )

@@ -2,6 +2,12 @@ import React from 'react';
 import s from "./MyPosts.module.css"
 import Post from "./Post/Post";
 
+let addPostActionCreator = () => {
+    return {
+        type: "ADD-POST"
+    }
+}
+
 const MyPosts = (props) => {
 
     let postElements = props.posts.map(p =>

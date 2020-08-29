@@ -13,8 +13,6 @@ import Settings from "./components/Settings/Settings";
 
 
 const App = (props) => {
-
-
   return (
         <div className="app-wrapper">
           <Header/>
@@ -26,7 +24,8 @@ const App = (props) => {
 
             <Route exact path='/profile' render={ () => <Profile
                 profilePage={props.state.profilePage}
-                disPatch={props.disPatch}
+                dispatch={props.dispatch}
+
             />}/>
 
                 <Route exact path='/news' component={News}/>
